@@ -1,0 +1,294 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.cor_logo{
+    background-color: #ff8800;
+}
+.bloco {
+    min-height: 100%;
+    padding-top: 100px;
+}
+/*CUSTOM*/
+nav i,
+nav [class^="mdi-"], nav [class*="mdi-"],
+nav i.material-icons {
+  display: block;
+  font-size: 24px;
+  height: 100px;
+  line-height: 100px;
+}
+.sidenav{
+    background-image: url(../img/dark_leather.png)
+}
+.sidenav li a{
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.z-depth-0 {
+            box-shadow: none !important;
+  }
+.navbar-fixed {
+    position: absolute;
+    height: 100px;
+    z-index: 997;
+  }
+nav {
+    color: #fff;
+    background-color: #ee6e73;
+    width: 100%;
+    height: 100px;
+    line-height: 56px;
+  }
+  nav.nav-extended .nav-wrapper {
+    min-height: 100px;
+    height: auto;
+  }
+  
+/*LOGO*/
+.logo-text{
+    font-size: 0;
+    margin: 0;
+}
+.logo-img {
+    margin-top: 15px;
+}
+/*MENU*/
+.menu{
+    margin-top: 20px;
+}
+.navbar {
+    background-color: transparent;
+}
+.nav-color{
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: background 0.5 linear;
+}
+.navbar ul a{
+    color: black;
+    font-weight: 450;
+}
+.navbar ul a:hover{
+    background-color: transparent;
+    color: #ff8800;
+}
+.navbar ul li a{
+    color: white;
+}
+/*HOME*/
+.tipografia h2{
+    font-weight: 500;
+    font-size: 25px;
+}
+.tipografia p{
+    margin-top: 20px;
+    line-height: 35px;
+    font-size: large;
+    font-weight: 400;
+    width: 80%;
+}
+.typing{
+    font-family: "Special Elite", monospace;
+    border-right: 2px solid rgb(255, 255, 255, .75 );
+    width: 48%;
+    margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #ff8800;
+}
+.typing-animation{
+    animation: piscar 600ms steps(40) infinite normal, typing 4s steps(25) 1s normal ;
+}
+
+.home{
+    animation: mudar 30s infinite normal;  
+    background-image: url(../img/back_4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: blanchedalmond;
+}
+.botoes_home{
+    padding-top: 30px;
+}
+.home h2{
+    margin-top: 100px;
+}
+/*SERVIÇOS*/
+.servico{
+    background-image: url(../img/chevron.png);
+}
+
+.servico h2 {
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 350;
+}
+.servico h2::after {
+    content: '';
+    display: block;
+    width: 300px;
+    border-top: 1px solid #ff8800;
+    margin: 15px auto;
+    margin-bottom: 50px;
+}
+.edita{
+    font-size: 30px;
+    font-weight: 350;
+}
+/*TABELA PREÇOS*/
+.space_icon{
+    padding-right: 5px;
+}
+.tabela{
+    background-image: url(../img/dark_wood.png)
+}
+.tabela .texto{
+    font-size: 25px;
+    font-weight: 550    ;
+    font-family: "Open Sans Condensed", monospace;
+}
+.tabela .font{
+    font-size: 50px;
+    font-weight: 500;
+}
+.tabela .font::after{
+    content: '';
+    display: block;
+    width: 100px;
+    border-top: 2px solid #000;
+    margin: 15px auto;
+    margin-bottom: 15px;
+}
+.tabela .font_blog::after{
+    content: '';
+    display: block;
+    width: 100px;
+    border-top: 2px solid #000;
+    margin: 15px auto;
+    margin-bottom: 15px;
+}
+.tabela .font_ecommerce::after{
+    content: '';
+    display: block;
+    width: 250px;
+    border-top: 2px solid #000;
+    margin: 15px auto;
+    margin-bottom: 15px;
+}
+.borda{
+    margin-left: 40px;
+    background-image: url(../img/stonehaven.png);
+}
+.borda_ecommerce{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: url(../img/stonehaven.png);
+}
+.borda_afastar{
+    background-image: url(../img/stonehaven.png);
+    margin-right: 50px;
+}
+.tabela h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+/*SOBRE NÓS*/
+.sobre{
+    background-image: url(../img/back_sobre.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -20px;
+}
+.sobre h2{
+    margin-top: initial;
+}
+.sobre h2::after{
+    content: '';
+    display: block;
+    width: 200px;
+    border-top: 1px solid #ff8800;
+    margin: 15px auto;
+}
+/*CONTATO*/
+.back_contato{
+    background-image: url(../img/dark_wood.png);
+    min-height: 550px;
+    padding: 30px;
+}
+.contato h4{
+    font-size: 30px;
+}
+.contato_sociais{
+    padding-left: 50px;
+    width: 80%;
+}
+.back_form{
+    background-color: cadetblue;
+    min-height: 550px;
+}
+/*RODAPÉ*/
+.back_footer{
+    background-image: url(../img/back_3.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 180px;
+}
+.footer-sociais{
+    padding-top: 25px;
+}
+.footer-direitos{
+    padding-top: 25px;
+}
+.rodape{
+    padding-top: 25px;
+}
+/*ANIMAÇÃO TYPING*/
+@keyframes piscar {
+    from{
+        border-right-color: rgba(255,255,255, .75)
+    }
+    to{
+        border-right-color: transparent ;
+    }
+
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to {
+        width: 50%;
+    }
+}
+/*ANIMAÇÃO HOME*/
+@keyframes mudar{
+    40%{
+        background-image: url(../img/back_2.png) ;
+    }
+    80%{
+        background-image: url(../img/back_1.png) ;
+    }
+    100%{
+        background-image:  url(../img/back_4.png) ;
+    }
+}
+/*RESPONSIVIDADE*/
+@media only screen and (max-width: 480px) {
+    
+}
+@media only screen and (min-width: 601px) {
+    .tipografia h2{
+        font-size: 40px;
+        
+    }
+}
+@media only screen and (min-width: 993px) {
+    .tipografia h2{
+        font-size: 50px;
+        
+    }
+}

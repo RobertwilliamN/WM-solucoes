@@ -5,24 +5,473 @@
     <meta charset="UTF-8">
     <!--Importando Icons Google Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Importando materialize.min.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" />
+    <!--Icons Bootstrap Rede Social-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--Importando DNS-materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Importando custom.css-->
     <link type="text/css" rel="stylesheet" href="css/custom.css" />
+    <!--Icon logo-->
+    <link rel="shortcut icon" href="./img/logo_icon.png" type="image/x-icon">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>WM-Teste2</title>
+    <title>WM Soluções Web</title>
 </head>
 
 <body>
     <!--MENU-->
+    <header>
+        <!--MENU MOBILE-->
+        <ul class="sidenav" id="menu-mobile">
+            <li><a href="#home" class="white-text">Home</a></li>
+            <li><a href="#servico" class="white-text">Serviços</a></li>
+            <li><a href="#sobre" class="white-text">Sobre nós</a></li>
+            <li><a href="#contato" class="white-text">Contato</a></li>
+        </ul>
+        <div class="navbar-fixed">
+            <nav class="navbar z-depth-0">
+                <div class="nav-wrapper container">
+                    <h1 class="logo-text">WM Soluções Web</h1>
+                    <a href="#" class="brand-logo left"><img class="logo-img" src="./img/logo_branco.png"
+                            alt="logo"></a>
+                    <ul class="right menu light hide-on-med-and-down">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#servico">Serviços</a></li>
+                        <li><a href="#sobre">Sobre nós</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+
+                    <a href="#" data-target="menu-mobile" class="sidenav-trigger right"><i
+                            class="material-icons hide-on-large-only">menu</i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--REDES SOCIAIS-->
+    <div class="fixed-action-btn">
+        <a href="https://api.whatsapp.com/send?phone=5561993862329&text=Ol%C3%A1%2C%20tudo%20bem%3F"
+            class="btn-floating btn-large orange">
+            <i class="large fa fa-whatsapp green"></i>
+        </a>
+    </div>
     <!--HOME-->
+    <section class="home bloco scrollspy" id="home">
+        <div class="row container tipografia">
+            <div class="col s12 center">
+                <div class="hide-on-med-and-down">
+                    <h2 class="center light typing typing-animation">
+                        WM Soluções Web</h2>
+                </div>
+
+                <p class="container white-text light"> A empresa tem como principal objetivo fazer a
+                    diferença no comércio, ajudando pequenos e grandes negócios a fortalecerem
+                    suas marcas no mundo digital, com comprometimento e responsabilidade.
+                    Conheça nossos serviços!
+                </p>
+                <div class="row botoes_home">
+                    <a href="#servico" class="btn btn-medium waves-effect waves-light black-text orange"><i
+                            class="material-icons left">work</i>Serviços</a>
+                    <a href="#" class="btn btn-medium waves-effect waves-light black-text white"><i
+                            class="material-icons left">call</i>Contato</a>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--SERVIÇOS-->
+    <section class="servico bloco scrollspy" id="servico">
+        <div class="row container center">
+            <div class="col s12">
+                <h2 class="light black-text">Nossos Serviços</h2>
+            </div>
+        </div>
+
+        <div class="row container">
+            <article class="col s12 m6 l3">
+                <!--CARD SITES-->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/sites.png" alt="sites" class="materialboxed">
+                        <a href="#site-modal"
+                            class="btn btn-floating modal-trigger halfway-fab waves-effect waves-light orange">
+                            <i class="material-icons">more_horiz</i></a>
+                    </div>
+                    <div class="card-content">
+                        <a href="#contato">
+                            <h3 class="light title-card orange-text edita">Sites</h3>
+                        </a>
+                        <p> Sites são as melhores formas de
+                            atrair clientes para o seu negócio.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <!--MODAL SITES-->
+            <div class="modal" id="site-modal">
+                <div class="modal-content">
+                    <h4 class="light orange-text">Sites</h4>
+                    <p>Está precisando de um site pessoal, profissional ou empresarial?</p>
+                    <p> Nós podemos te ajudar. Por meio de frameworks e linguagens Web como:
+                        HTML, CSS e JavaScript, desenvolvemos um site completamente funcional
+                        e responsivo para sua necessidade.</p>
+                    <p class="center light orange-text">Como você imagina seu Site?</p>
+                    <p class="center light orange-text">Entre em contato e nos conte!</p>
+                    <div class="center">
+                        <a href="#contato" class="btn cor_logo light">Contato</a>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <a class="btn cor_logo modal-action modal-close">Sair</a>
+                </div>
+            </div>
+            <!--CARD SISTEMAS-->
+            <article class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/Sistema.png" alt="sistemas" class="materialboxed">
+                        <a href="#sistema-modal"
+                            class="btn btn-floating modal-trigger halfway-fab waves-effect waves-light orange">
+                            <i class="material-icons">more_horiz</i></a>
+                    </div>
+                    <div class="card-content">
+                        <a href="#contato">
+                            <h3 class="light title-card orange-text edita">Sistemas</h3>
+                        </a>
+                        <p> Peça já seu sistema personalizado e totalmente
+                            funcional.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <!--MODAL SISTEMAS-->
+            <div class="modal" id="sistema-modal">
+                <div class="modal-content">
+                    <h4 class="light orange-text">Sistemas</h4>
+                    <p>Além de um site para o uso pessoal, empresarial e profissional,
+                        você precisa de um sistema de gerenciamento dele?
+                    </p>
+                    <p>De forma artesanal por meio de HTML, CSS, JavaScript e tecnologias backend
+                        atuais, desenvolvemos um ecossistema aonde o usúario master possa adicionar,
+                        alterar e/ou excluir conteúdo de seu site.
+                    </p>
+                    <p class="center light orange-text">Como você imagina seu sistema?</p>
+                    <p class="center light orange-text">Entre em contato e nos conte!</p>
+                    <div class="center">
+                        <a href="#contato" class="btn cor_logo light">Contato</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn cor_logo modal-action modal-close">Sair</a>
+                </div>
+            </div>
+            <!--CARD ECOMMERCE-->
+            <article class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/Ecommerce.png" alt="ecommerce" class="materialboxed">
+                        <a href="#modal-ecommerce"
+                            class="btn  modal-trigger btn-floating halfway-fab waves-effect waves-light orange">
+                            <i class="material-icons">more_horiz</i></a>
+                    </div>
+                    <div class="card-content">
+                        <a href="#contato">
+                            <h3 class="light title-card orange-text edita">E-commerce</h3>
+                        </a>
+                        <p>Faça mais vendas e atraia mais clientes
+                            com uma loja virtual</p>
+                    </div>
+                </div>
+            </article>
+            <!--MODAL ECOMMERCE-->
+            <div class="modal" id="modal-ecommerce">
+                <div class="modal-content">
+                    <h4 class="light orange-text">E-commerce</h4>
+                    <p>Já pensou em ter uma loja online completamente gerenciavel e personalizada
+                        com o nome do seu negócio ?
+                    </p>
+                    <p>Fazemos sua loja virtual com as tecnologias mais atuais do mercado. Trazendo
+                        segurança, rapidez e maior alcance nas suas vendas.
+                    </p>
+                    <p class="center light orange-text">Como você imagina sua Loja-Vistual?</p>
+                    <p class="center light orange-text">Entre em contato e nos conte!</p>
+                    <div class="center">
+                        <a href="#contato" class="btn cor_logo light">Contato</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn cor_logo modal-action modal-close">Sair</a>
+                </div>
+            </div>
+            <!--CARD BLOG-->
+            <article class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/blog.png" alt="blog" class="materialboxed ">
+                        <a href="#modal-blog"
+                            class="btn btn-floating  modal-trigger halfway-fab waves-effect waves-light orange">
+                            <i class="material-icons">more_horiz</i></a>
+                    </div>
+                    <div class="card-content">
+                        <a href="#contato">
+                            <h3 class="light title-card orange-text edita">Blog</h3>
+                        </a>
+                        <p> Divulgue seus hobbys e todo tipo de assunto
+                            com um Blog.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <!--MODAL BLOG-->
+            <div class="modal" id="modal-blog">
+                <div class="modal-content">
+                    <h4 class="light orange-text">Blog</h4>
+                    <p>Digitar aqui...</p>
+                    <p class="center light orange-text">Como você imagina seu Blog?</p>
+                    <p class="center light orange-text">Entre em contato e nos conte!</p>
+                    <div class="center">
+                        <a href="#contato" class="btn cor_logo light">Contato</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn cor_logo modal-action modal-close">Sair</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--TABELA VALORES-->
+    <section class="tabela bloco">
+        <div class="row">
+            <!--VALOR E-COMMERCE-->
+            <div class="col s12 m4 center">
+                <div class="card borda">
+                    <span class="card-title font_ecommerce font light">E-COMMERCE</span>
+                    <div class="green z-depth-5">
+                        <h1 class="light">R$ 700,00</h1>
+                        <p class="light white-text">Até 5x R$ 140,00 ou até 12x com juros</p>
+                    </div>
+                    <div class="card-content">
+                        <p class="light texto"><i class="material-icons space_icon">done</i>One page ou até 5 páginas
+                            (home+interna)</p>
+                        <p class="light texto"><i class="material-icons space_icon">done</i>Design Responsivo</p>
+                        <p class="light texto"><i class="material-icons space_icon">done</i>Site Seguro (https://)</p>
+                        <p class="light texto"><i class="material-icons space_icon">done</i>SEO</p>
+                        <p class="light texto"><i class="material-icons space_icon">done</i>Domínio (bônus grátis por um
+                            ano)</p>
+                        <p class="light texto"><i class="material-icons space_icon">done</i>Integração com Redes Sociais
+                        </p>
+                        <p class="light texto"><i class="material-icons space_icon">done</i>Layout Personalizado</p>
+                        <div class="card-action">
+                            <a href="#contato" class="btn btn-large cor_logo">Contato</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--VALOR SITE-->
+            <div class="col s12 m4 center">
+                <div class="card borda_ecommerce">
+                    <span class="card-title font light">SITE</span>
+                    <div class="orange z-depth-5">
+                        <h1 class="light">R$ 350,00</h1>
+                        <p class="light white-text">Até 5x R$ 70,00 ou até 12x com juros</p>
+                    </div>
+                    <div class="card-content">
+                        <p class="light texto"><i class="material-icons space_icon">done</i>One page ou até 5 páginas
+                            (home+interna)</p>
+                        <p class="light texto"><i class="material-icons space_icon">done</i>Design Responsivo</p>
+                        <p class="light texto"><i class="material-icons space_icon">done</i>Site Seguro (https://)</p>
+                        <p class="light texto"><i class="material-icons space_icon">done</i>SEO</p>
+                        <p class="light texto"><i class="material-icons space_icon">done</i>Domínio (Grátis por um
+                            ano)</p>
+                        <p class="light texto"><i class="material-icons space_icon">done</i>Integração com Redes Sociais
+                        </p>
+                        <p class="light texto"><i class="material-icons space_icon">done</i>Layout Personalizado</p>
+                        <div class="card-action">
+                            <a href="#contato" class="btn cor_logo btn-large">Contato</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--VALOR BLOG-->
+            <div class="col s12 m4 center">
+                <div class="card borda_afastar">
+                    <span class="card-title font_blog font light">BLOG</span>
+                    <div class="blue z-depth-5">
+                        <h1 class="light">R$ 300,00</h1>
+                        <p class="light white-text">Até 5x R$ 60,00 ou até 12x com juros</p>
+                    </div>
+                    <div class="card-content">
+                        <p class="light texto"><i class="material-icons space_icon">done</i>Modelo padrão</p>
+                        <p class="light texto"><i class="material-icons space_icon">done</i>Design Responsivo</p>
+                        <p class="light texto"><i class="material-icons space_icon">done</i>Site Seguro (https://)</p>
+                        <p class="light texto"><i class="material-icons space_icon">done</i>SEO</p>
+                        <p class="light texto"><i class="material-icons space_icon">done</i>Domínio (bônus grátis por um
+                            ano)</p>
+                        <p class="light texto"><i class="material-icons space_icon">done</i>Integração com Redes Sociais
+                        </p>
+                        <p class="light texto"><i class="material-icons space_icon">done</i>Layout Personalizado</p>
+                        <div class="card-action">
+                            <a href="#contato" class="btn cor_logo btn-large">Contato</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
     <!--SOBRE-->
+    <section class="sobre bloco scrollspy" id="sobre">
+        <div class="row container">
+            <div class="col s12 center">
+                <h2 class="light white-text">Sobre Nós</h2>
+            </div>
+            <div class="col s12 m3 center">
+                <img src="./img/Robert.jpeg" class="circle responsive-img" alt="William">
+                <h5 class="light white-text">Robert William</h5>
+                <h6 class="light orange-text">Desenvolvedor</h6>
+                <p class="white-text">Graduando em Engenharia de Redes de Comunicação
+                    na Universidade de Brasília. Experiência profissional como desenvolvedor,
+                    apaixonado por tecnologia.
+                </p>
+            </div>
+            <div class="col s12 m3 center">
+                <img src="./img/depo1.jpg" class="circle responsive-img" alt="Marlon">
+                <h5 class="light white-text">Marlon Henrique</h5>
+                <h6 class="light orange-text">Desenvolvedor</h6>
+                <p class="light white-text">Apresentação sobre...</p>
+            </div>
+            <div class="col s12 m3 center">
+                <img src="./img/Andreza.jpeg" class="circle responsive-img" alt="Andreza">
+                <h5 class="light white-text">Andreza</h5>
+                <h6 class="light orange-text">Designer</h6>
+                <p class="light white-text">Apresentação sobre...</p>
+            </div>
+            <div class="col s12 m3 center">
+                <img src="./img/depo3.jpg" class="circle responsive-img" alt="Juliana">
+                <h5 class="light white-text">Juliana</h5>
+                <h6 class="light orange-text">Publicidade</h6>
+                <p class="light white-text">Apresentação sobre...</p>
+            </div>
+
+        </div>
+    </section>
     <!--CONTATO-->
+    <section class="contato bloco scrollspy" id="contato">
+        <div class="row">
+            <div class="col s12">
+                <h3 class="center light">Contato</h3>
+            </div>
+            <div class="col s12 m12 l6 center">
+                <div class=" back_contato center contato_sociais">
+                    <h4 class="white-text light">Nossas Redes Sociais</h4>
+                    <p class="white-text">Nos acompanhe nas redes sociais e fique por dentro
+                        das novidades do mundo da tecnologia e de nossas ofertas!
+                    </p>
+                    <a href="#" class="btn-floating back_cor"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="btn-floating back_cor"><i class="fa fa-google"></i></a>
+                    <a href="#" class="btn-floating back_cor"><i class="fa fa-instagram"></i></a>
+
+                    <h4 class="white-text">Contatos</h4>
+                    <a href="#" class="btn-floating back_cor"><i class="fa fa-whatsapp"></i></a>
+                    <p class="white-text">61 99999-9999</p>
+                    <a class="btn-floating back_cor"><i class="material-icons back_cor">email</i></a>
+                    <p class="white-text">61 99999-9999</p>
+                </div>
+            </div>
+
+            <div class="col s12 m12 l6">
+                <div class="back_form center">
+                    <div class="row">
+                        <form class="col s12">
+                            <h4 class="light">FALE CONOSCO</h4>
+                            <p class="light">Dúvidas, sugestões e orçamento.</p>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input placeholder="Seu nome" id="name" type="text" class="validate">
+                                    <label for="name">Nome</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">phone</i>
+                                    <input placeholder="Seu telefone" id="phone" type="text" class="validate">
+                                    <label for="phone">Telefone</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">email</i>
+                                    <input placeholder="Seu e-mail" id="email" type="text" class="validate">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">message</i>
+                                    <textarea placeholder="Descreva o motivo do seu contato" id="textarea1"
+                                        class="materialize-textarea"></textarea>
+                                    <label for="textarea1">Mensagem</label>
+                                </div>
+                            </div>
+                            <button class="btn waves-effect waves-light back_cor subir" type="submit"
+                                name="action">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--RODAPÉ-->
+    <footer class="back_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12 center">
+                    <img src="./img/logo_branco.png" alt="logo" class="rodape">
+                </div>
+                <div class="col l4 offset-l2 s12 left">
+                    <ul class="footer-sociais">
+                        <a href="#" class="btn-floating cor_logo"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="btn-floating cor_logo"><i class="fa fa-google"></i></a>
+                        <a href="#" class="btn-floating cor_logo"><i class="fa fa-instagram"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center">
+                <p class="white-text footer-direitos">Copyright © WM soluções Web 2020 - Todos os direitos reservados |
+                    contato@wmsolucoesweb.com.br</p>
+            </div>
+        </div>
+    </footer>
 
-
-    <!--Importar arquivos js e jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Importar arquivos js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--ATIVAÇÃO-->
+    <script>  document.addEventListener('DOMContentLoaded', function () {
+            /*Menu-mobile*/
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, {});
+            //modal
+            $(".modal").modal();
+            /*Scrollspy*/
+            var elems = document.querySelectorAll('.scrollspy');
+            var instances = M.ScrollSpy.init(elems, {});
+            //redes sociais
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems, {});
+        });
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop() > 550) {
+                $(".navbar").addClass("nav-color");
+            } else {
+                $(".navbar").removeClass("nav-color");
+            }
+        });
+    </script>
 </body>
 
 </html>
